@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar light>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+
+      <ion-searchbar
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)"
+      placeholder="Search stores, brands & categories">
+         
+    </ion-searchbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-segment class="SwipedTabs-tabs">
+        <ion-segment-button *ngFor='let tab of tabs ; let i = index ' (click)="selectTab(i)" [ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }'>
+          {{tab}}
+        </ion-segment-button>
+      </ion-segment>
+        
+  <ion-slides style="height: auto" #SwipedTabsSlider (ionSlideDrag)="animateIndicator($event)" (ionSlideWillChange)="updateIndicatorPosition()"
+        (ionSlideDidChange)="updateIndicatorPosition()" (pan)="updateIndicatorPosition()" [pager]="false">
+              
+              <ion-slide>
+                 <h1>Malls</h1>
+              </ion-slide>
+              <ion-slide>
+                 <h1>Stores</h1>
+              </ion-slide>
+
+  </ion-slides>
+</div>
+</ion-content>

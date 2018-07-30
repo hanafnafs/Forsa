@@ -1,0 +1,198 @@
+@font-face{
+    font-family: insideApp;
+    src: url('../assets/fonts/newone.woff2') format('woff2');
+    }
+@font-face{
+    font-family: Logo;
+    src: url('../assets/fonts/dance.woff2') format('woff2');
+    }
+
+    *{
+    font-family: insideApp;
+    }
+
+
+    .toolbar-background {
+        background:  #463D68 !important;
+        border-bottom: 0 !important;
+    }
+    .title{
+        
+        font-family: 'Logo';
+        font-family: 10px;
+        font-weight: 25px;
+        text-align: center !important;
+        color:white !important;
+
+    }
+
+    .content{
+        padding-top:20%;
+    }
+  
+    .inline{
+        display:inline-block;
+    }
+
+    #itemsCat{
+        min-height: 2rem;
+    }
+    
+ion-icon {
+        &[class*="appname-"] {
+            // Instead of using the font-based icons
+            // We're applying SVG masks
+      //  mask-size: contain;
+      //  mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        
+        }
+        // custom icons
+&[class*="appname-customicon1"] {
+        mask-image: url(../assets/imgs/thumbs_down.svg);
+
+        color: #463D68 !important; 
+        }
+&[class*="appname-customicon2"] {
+        mask-image: url(../assets/imgs/thumbs_up.svg);
+
+        color: #463D68 !important; 
+
+        }
+&[class*="appname-customicon3"] {
+        mask-image: url(../assets/imgs/logout.svg);
+        width: 8%;
+        height: 65%;
+        margin-bottom:1%;
+}
+&[class*="appname-customicon4"] {
+        mask-image: url(../assets/imgs/love.svg);
+        width: 8%;
+        height: 70%;
+        margin-bottom:1%;
+        color: #463D68 !important; 
+
+    }
+&[class*="appname-customicon5"] {
+        mask-image: url(../assets/imgs/sett.svg);
+        width: 8%;
+        height: 90%;
+        margin-top:2%;
+        color: #463D68 !important; 
+
+        }
+&[class*="appname-customicon6"] {
+        mask-image: url(../assets/imgs/star.svg);
+        width: 8%;
+        height: 90%;
+       // margin-top:1%;
+        color: grey !important
+        }
+&[class*="appname-customicon7"] {
+        mask-image: url(../assets/imgs/his.svg);
+        width: 9%;
+        height: 85%;
+       // margin-top:1%;
+        color: #463D68 !important; 
+    }
+&[class*="appname-customicon8"] {
+        mask-image: url(../assets/imgs/cats.svg);
+        width: 9%;
+        height: 85%;
+      //  margin-top:1%;
+        color: #463D68 !important; 
+
+}
+&[class*="appname-customicon9"] {
+        mask-image: url(../assets/imgs/barcode.svg);
+        width: 9%;
+        height: 85%;
+        //margin-top:1%;
+        color: #463D68 !important; 
+}
+&[class*="appname-fashion"] {
+    mask-image: url(../assets/imgs/cats/fashion.svg);
+    width: 9%;
+    height: 85%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-shoes"] {
+    mask-image: url(../assets/imgs/cats/shoes.svg);
+    width: 9%;
+    height: 85%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-accs"] {
+    mask-image: url(../assets/imgs/cats/accs.svg);
+    width: 9%;
+    height: 85%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-sports"] {
+    mask-image: url(../assets/imgs/cats/sports.svg);
+    width: 9%;
+    height: 85%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-elect"] {
+    mask-image: url(../assets/imgs/cats/plug.svg);
+    width: 9%;
+    height: 85%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-events"] {
+    mask-image: url(../assets/imgs/cats/events.svg);
+    width: 9%;
+    height: 80%;
+    margin-top:2%;
+    color: #463D68 !important; 
+}
+&[class*="appname-nav"] {
+    mask-image: url(../assets/imgs/nav.svg);
+    width: 50px;
+    height: 50px;
+    display:block;
+    margin-top:12% !important;
+    color: white !important; 
+}
+    }
+    .profilePic{
+
+        background:  linear-gradient(0deg, #20002c,	#463D68 ) !important;
+        height:160px;
+        padding-top:10%;
+        
+        }
+        .propic{
+            border-radius: 50%;
+            width: 25%;
+            height:50%;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #userdata{
+            display: block;
+            color:white;
+            font-weight: bold;
+            line-height: 25px;
+            text-align: center;
+        }
+
+  
+    .item-inner{
+        margin-left: 0 !important;
+        font-weight: bold !important;
+        color: #463D68 !important;
+    }
+    ion-icon{
+        position: relative;
+        top: 1%;
+
+    }

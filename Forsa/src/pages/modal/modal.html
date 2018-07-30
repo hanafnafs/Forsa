@@ -1,0 +1,77 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <span class="title" text-color="custom-color">Store Name</span>
+    </ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="closeModal()">
+        <ion-icon class="backIcon" name="arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button (click)="toggle()">
+        <ion-icon class="shareIcon" [name]="visible ? 'heart-outline' :'heart'"></ion-icon>
+      </button>
+      <button ion-button (click)="share()">
+        <ion-icon class="shareIcon" name="share"></ion-icon>
+      </button>
+      <button ion-button>
+        <ion-icon name="appname-nav"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div>
+    <div class="parent">
+      <img src="../../assets/imgs/zaraaa.jpg" class="headerImg" />
+      <!--      <img [src]="getImagePath(newsData.NewsImage)" class="image" /> -->
+      <p id="expDate"> Ends on 14/8/2018
+        <img src="../../assets/imgs/download.png" class="logoImg" /> </p>
+    </div>
+    <!--      <button ion-button class="btn" clear (click)="toggle();addToWishlist(newsData);">
+        <ion-icon [name]="visible ? 'heart-outline' :'heart'" class="wishlst"></ion-icon>
+      </button> -->
+    <!--    <div>
+      <button ion-button style="float:left" class="button" color="secondary" (click)="addLike()" [disabled]="disableButton" clear>
+        <span class="span">{{like}}</span>
+        <ion-icon class="icons" name="appname-customicon2">
+        </ion-icon>
+      </button>
+      <button ion-button style="float:right" class="button" color="secondary" (click)="addDisLike()" [disabled]="disable" clear>
+        <span class="span">{{dislike}}</span>
+        <ion-icon class="icons" name="appname-customicon1"> </ion-icon>
+      </button>
+    </div> -->
+    <h1>{{newsData.NewsTitle}}</h1>
+    <!--    <p> {{newsData.NewsContent}} </p> -->
+    <p style="text-align:center">Get 15% discount on products</p>
+  </div>
+
+
+  <div>
+    <ion-row wrap>
+      <ion-col>
+        <div>
+          <ion-card class="stores" (click)="goToModalPro()">
+            <img src="../../assets/imgs/shoes.jpg" class="productImg" />
+            <button ion-button style="float:left" class="button" color="secondary" clear>
+              <span class="span">{{like}}</span>
+              <ion-icon class="icons" name="appname-customicon2">
+              </ion-icon>
+            </button>
+            <button ion-button style="float:right" class="button" color="secondary" clear>
+              <span class="span">{{dislike}}</span>
+              <ion-icon class="icons" name="appname-customicon1"> </ion-icon>
+            </button>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+</ion-content>

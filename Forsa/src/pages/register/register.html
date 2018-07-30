@@ -1,0 +1,51 @@
+<ion-content padding>
+
+  <h1>Sign Up</h1>
+  <div class="fields">
+    <ion-list>
+      <ion-item no-lines>
+        <ion-input type="text" placeholder="Name" #name></ion-input>
+      </ion-item>
+      <br>
+      <ion-item no-lines>
+        <ion-input type="email" placeholder="Email" #email></ion-input>
+      </ion-item>
+      <br>
+      <ion-item no-lines>
+        <ion-input type="password" placeholder="Password" #pwd></ion-input>
+      </ion-item>
+      <br>
+      <ion-item no-lines>
+        <ion-input type="number" placeholder="Phone Number" #mobile></ion-input>
+      </ion-item>
+      <br>
+      <ion-item no-lines>
+        <ion-label>Gender</ion-label>
+        <ion-select interface="popover" [(ngModel)]="gender">
+          <ion-option value="0">Female</ion-option>
+          <ion-option value="1">Male</ion-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item no-lines>
+        <ion-label>Governorate</ion-label>
+        <ion-select interface="popover" [(ngModel)]="governorate">
+          <ion-option value="c">Cairo</ion-option>
+          <ion-option value="a">Alexandria</ion-option>
+          <ion-option value="G">Giza</ion-option>
+          <ion-option value="q">Qalyoubia</ion-option>
+          <ion-option value="t">Tanta</ion-option>
+          <ion-option value="s">Suez</ion-option>
+          <ion-option value="as">Aswan</ion-option>
+          <ion-option value="f">Faiyum</ion-option>
+          <ion-option value="sh">Sharqia</ion-option>
+          <ion-option value="m">Minya</ion-option>
+          <ion-option value="p">PortSaid</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <div>
+      <button class="confirm" ion-button round outline (click)="register(email.value, pwd.value, mobile.value, name.value, governorate, gender)">Confirm</button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,14 @@
+page-appsettings {
+
+    [text-color="custom-color"] {
+        color: white;
+        font-family: 'insideApp';
+        padding-right:60% !important;
+    }
+
+    ion-header ion-icon.back-button-icon.icon, 
+    ion-header span.back-button-text.back-button-text-ios {
+    color: white;
+    margin-bottom:10%;
+}
+}

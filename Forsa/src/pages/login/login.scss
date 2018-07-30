@@ -1,0 +1,51 @@
+page-login {
+
+    ion-content{
+        background:  linear-gradient(0deg, #31647F,	#230B48 ) !important;
+        font-family: 'Indie Flower', cursive !important;
+
+        }
+
+    h1{
+        color:white;
+        padding-top: 30%;
+        text-align: center;
+        font-size: 55px;
+        }
+
+    .item.item-input {
+        background-color:#3D4D66 ;
+        border-radius: 10px;
+        margin-bottom: 10px;  
+        height:15px;
+        color:white;
+
+    }
+
+    .inputs{
+        padding-top:30%;
+    }
+
+    .button.login{
+        background: #FF568C;
+        width: 100%;
+        border-color: transparent;
+        color:white !important;
+        padding-left:auto; 
+        padding-right:auto; 
+        }
+        .button.login.active, .button.login.activated{
+            background-color: #1E2F4B;
+            color:white;
+        }
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: gray;
+        padding-left: 25%;
+
+
+
+    }
+
+}

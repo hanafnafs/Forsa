@@ -1,0 +1,49 @@
+page-fav {
+
+    [text-color="custom-color"] {
+        color: white;
+        font-family: 'insideApp';
+        padding-right:60% !important;
+    }
+
+    .backIcon{
+        font-size: 150%;
+        font-weight:bold;
+        color:white;
+        margin-bottom:10%;
+    }
+
+    ion-header ion-icon.back-button-icon.icon, 
+    ion-header span.back-button-text.back-button-text-ios {
+    color: white;
+    margin-bottom:10%;
+}
+
+    .stores{
+        
+        width:35% !important;
+        height:30% !important;
+        background: #D3D3D3 !important;;
+        text-align: center !important;
+    }
+
+    .logoImg{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:5%;
+        width:70%;
+        height:60%;
+        border: 1px solid #ddd;
+        border-bottom: 2px solid #ddd;
+        border-radius: 4px;
+    }
+    .favIcon{
+        color: #463D68 !important;
+        padding-top:3% !important;
+        .span{
+            font-weight:bold;
+        }
+    }
+    
+}

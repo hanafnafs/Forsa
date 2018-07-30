@@ -1,0 +1,40 @@
+page-register {
+
+
+    ion-content{
+        background:  linear-gradient(0deg, #31647F,	#230B48 ) !important;
+        font-family: 'Indie Flower', cursive !important;
+
+        }
+    h1{
+        color:white;
+        text-align: center;
+        padding-top: 10%;
+        font-size: 55px;
+        }
+    .item.item-input, .item.item-select{
+        background-color: #3D4D66;
+        border-radius: 10px;
+        margin-bottom: 10px;  
+        height:15px;
+        color:white;
+    }
+
+    .fields{
+        padding-top:20%;
+    }
+
+    .button.confirm{
+
+        background: #FF568C;
+        width: 95%;
+        border-color: transparent;
+        color:white !important;
+        padding-left:auto; 
+        padding-right:auto; 
+        }
+    .button.confirm.active, .button.confirm.activated{
+        background-color: #1E2F4B;
+        color:white;
+    }
+}

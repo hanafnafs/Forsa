@@ -1,0 +1,54 @@
+<ion-menu [content]="content">
+  <ion-toolbar>
+    <ion-title>
+      <p class="title">Forsa</p>
+    </ion-title>
+  </ion-toolbar>
+
+
+
+  <ion-content>
+    <div class="content">
+        <div class="profilePic">
+          <img src="../assets/imgs/profilePic.png" class="propic">
+          <span id="userdata">{{name}}</span>
+          <span id="userdata">{{mail}}</span>
+        </div>
+        <!--        <ion-item no-lines id="itemsCat" style="border-bottom: 1px solid grey !important;" *ngFor="let cat of cats; let i=index"
+          text-wrap (click)="toggleGroup(cat)" [ngClass]="{active: isGroupShown(cat)}">
+          <img class="inline" [src]="getImagePath(cat.NewsCategoryImage)" class="image" />
+          <div class="inline">
+            <span style="font-weight:bolder;text-align:left;">{{cat.NewsCategory}}</span>
+          </div>
+          <div style="float:right; padding-top:2%;">
+            <ion-icon [name]="isGroupShown(cat) ? 'arrow-dropdown-circle' : 'arrow-dropright-circle'"></ion-icon>
+          </div>
+          <div *ngIf="isGroupShown(cat)">{{cat.NewsCategoryID}} {{cat.NewsCategoryID}} {{cat.NewsCategoryID}} {{cat.NewsCategoryID}}</div>
+        </ion-item> -->
+        <ion-list>
+        <ion-item no-lines menuClose (click)="goToFav()">
+          <ion-icon name="appname-customicon4" class="inline" item-left></ion-icon>Favourites
+      </ion-item>
+
+      <ion-item no-lines menuClose>
+          <ion-icon name="appname-customicon7" class="inline" item-left></ion-icon>Recently Viewed
+      </ion-item>
+
+      <ion-item no-lines menuClose (click)="goToCats()">
+          <ion-icon name="appname-customicon8" class="inline" item-left></ion-icon>Deals by Categories
+      </ion-item>
+
+      <ion-item no-lines menuClose>
+          <ion-icon name="appname-customicon9" class="inline" item-left></ion-icon>In-Store Copouns
+      </ion-item>
+
+      <ion-item no-lines menuClose (click)="goToSettings()">
+          <ion-icon name="appname-customicon5" class="inline" item-left></ion-icon>Settings
+      </ion-item>
+
+</ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage" swipeBackEnabled="false"></ion-nav>

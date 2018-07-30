@@ -1,0 +1,56 @@
+
+
+page-account {
+
+    [text-color="custom-color"] {
+        color: white;
+        font-family: 'insideApp';
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .profilePic{
+
+        background:  linear-gradient(0deg,  #20002c,#463D68 ) !important;
+        height:160px;
+        padding-top:5%;
+        }
+        .propic{
+            border-radius: 50%;
+            width: 23%;
+            height:50%;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #userdata{
+            display: block;
+            color:white;
+            font-weight: bold;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .bottom-border { 
+            border-bottom: 1px solid grey; 
+            height:10%;
+        }
+
+        .button{
+            text-align: left !important;
+            color:black !important;
+            font-size: 110% !important
+        }
+
+
+      .inline{
+        vertical-align: top;
+        display: inline;
+       
+    }    
+    ion-icon{
+        position: relative;
+        top: 4px;
+        left: 1px;
+    }
+}

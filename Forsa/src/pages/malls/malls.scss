@@ -1,0 +1,34 @@
+page-malls {
+
+
+    .toolbar-background {
+        background:  #463D68 !important;
+        border-bottom: 0 !important;
+    }
+
+    .segment-button {
+        color:black !important;
+        text-transform: none !important;
+        font-size: 2rem !important;
+       // font-weight: bold !important;
+        border: 0 !important;
+        font-family: 'insideApp';
+        
+
+    }
+    
+  
+   
+       .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
+      {
+        color: white !important;
+        border-bottom: 3px solid white !important;
+
+    }
+      .SwipedTabs-tabs
+      {
+        border-bottom: solid 1px #e6e6e6  !important;
+        background:  #463D68 !important;
+
+        }
+}

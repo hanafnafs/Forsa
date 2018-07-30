@@ -1,0 +1,133 @@
+page-modal {
+
+    .backIcon{
+        font-size: 240% !important;
+        color:white;
+    }
+    .shareIcon{
+        font-size:200% !important;
+        color: white;
+    }
+    .title{
+        text-align: center;
+        display: block;
+        margin-right: 10%;
+    }
+     
+    [text-color="custom-color"] {
+        color: white;
+        font-family: 'insideApp';
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .toolbar-background {
+        background:  #463D68 !important;
+        border-bottom: 0 !important;
+    }
+
+    h1{
+        font-weight: bold;
+        text-align:center !important;        
+    }
+
+    .button.button{     
+        display: inline;
+        color:#463D68;
+        border-color: black !important;
+        background: transparent !important;
+        position: relative;
+    }
+    
+    .span{
+        color:#666;
+        font-weight: bold;
+    }
+
+    .container {
+        position: relative;
+        }
+      
+      .container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+      }
+      
+      .container .btn {
+        position: absolute;
+        top: 85%;
+        left: 95%;
+        width: 13%;
+        height: 23%;
+        transform: translate(-50%, -50%);
+        background: transparent !important;
+        border-radius: 50%;
+        border: 1.5px solid grey !important;
+    }
+    .wishlst{
+        color:#FF568C !important;
+        font-size: 20px;
+        font-weight: bold;
+        }
+    
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+          }
+
+      .headerImg {
+        background-size: cover;
+        background-position: center center;              /* optional, center the image */
+        position: relative;
+
+    }
+    .logoImg {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: absolute;
+        top: 72%;
+        left: 5%;
+    }
+
+    #expDate{
+        text-align: center;
+        padding-right:  20%;
+        color: #666;
+        font-weight:bold;
+    }
+
+    .stores{
+        
+        width:45% !important;
+        height:50% !important;
+        background: #D3D3D3 !important;;
+        text-align: center !important;
+    }
+    
+    .productImg{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 80%;
+        height: 80%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .icons{
+        color:#463D68 !important;    
+        width:25px !important;
+        height:25px !important;
+    }
+
+    /*ion-button{
+        margin-left:0px !important;
+        margin-right:0px !important;
+    }*/
+}
+

@@ -1,0 +1,20 @@
+<ion-content padding>
+
+  <h1 style="text-align:center; font-family:'Logo';">Forsa</h1>
+  <div class="inputs">
+    <ion-list>
+      <ion-item no-lines>
+        <ion-icon name="person" item-start></ion-icon>
+        <ion-input type="email" placeholder="Username or Email" #email></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-icon name="lock" item-start></ion-icon>
+        <ion-input type="password" placeholder="Password" #password></ion-input>
+      </ion-item>
+    </ion-list>
+    <br>
+    <div>
+      <button class="login" ion-button round outline (tap)="login(email.value,password.value)">Login</button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar light>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)"
+      placeholder="Search stores, brands & categories">
+
+    </ion-searchbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-segment class="SwipedTabs-tabs">
+    <ion-segment-button *ngFor='let tab of tabs ; let i = index ' (click)="selectTab(i)" [ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }'>
+      {{tab}}
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- here is our dynamic line  "indicator"-->
+  <div id='indicator' class="SwipedTabs-indicatorSegment" [ngStyle]="{'width.%': (100/this.tabs.length)}"></div>
+
+  <ion-slides style="height: auto" #SwipedTabsSlider (ionSlideDrag)="animateIndicator($event)" (ionSlideWillChange)="updateIndicatorPosition()"
+    (ionSlideDidChange)="updateIndicatorPosition()" (pan)="updateIndicatorPosition()" [pager]="false" active-slide="2">
+    <ion-slide>
+      <!--skide for the ion segment-->
+      <ion-slides pager="true">
+        <ion-slide *ngFor="let card of news">
+          <ion-card (click)="openModal(card)" class="featured">
+            <ion-card-content>
+              <div class="parent">
+                <img src="../../assets/imgs/zaraaa.jpg" class="headerImg" />
+                <img src="../../assets/imgs/download.png" class="logoImg" />
+              </div>
+              <ion-card-title class="cardTitle">
+                <span class="promotion">In-Store Coupon </span>
+                <span class="store">• H&M</span>
+              </ion-card-title>
+              <p class="offerTitle"> {{ card.NewsTitle }} </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+      <h5 style="padding-bottom:3%;">Just For You</h5>
+      <ion-card>
+        <ion-img src="../../assets//imgs/pp.jpg" class="storeImg"> </ion-img>
+        <div class="cardInfo">
+          <span class="promotion">In-Store Coupon </span>
+          <span class="store">• P&B</span>
+          <p>Discount 30% for 400+</p>
+          <p class="expDay">Expires on 14/8/2018</p>
+        </div>
+      </ion-card>
+      <ion-card>
+        <ion-img src="../../assets//imgs/download.png" class="storeImg"> </ion-img>
+        <div class="cardInfo">
+          <span class="promotion">In-Store Coupon </span>
+          <span class="store">• H&M</span>
+          <p>Discount 30% for 400+</p>
+          <p class="expDay">Expires on 14/8/2018</p>
+        </div>
+      </ion-card>
+      <ion-card>
+        <ion-img src="../../assets//imgs/gap.png" class="storeImg"> </ion-img>
+        <div class="cardInfo">
+          <span class="promotion">In-Store Coupon </span>
+          <span class="store">• GAP</span>
+          <p>Discount 30% for 400+</p>
+          <p class="expDay">Expires on 14/8/2018</p>
+        </div>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <h1>Coupons</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Summer Collection</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

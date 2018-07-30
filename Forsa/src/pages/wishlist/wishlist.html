@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+        <span text-color="custom-color">My Wishlist</span>
+      </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="productAdded">
+  <p class="intro">
+    Now get a chance to win one of the product you add to your wishlist, 
+  </p>
+  <img src="../../assets/imgs/wishlist.png" class="heart">
+  <button ion-button round outline clear color="secondary" (click)="toWelcomePage()">EXPLORE OUR DEALS</button>
+</div>
+  <div>
+    <ion-list>
+      <ion-item no-lines>
+          <h1>
+            {{title}}
+          </h1>
+          <p>
+            {{content}}
+          </p>
+        </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

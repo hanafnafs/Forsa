@@ -1,0 +1,51 @@
+<!--
+  Generated template for the AccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <span text-color="custom-color">My Account</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div class="profilePic">
+    <img src="../assets/imgs/profilePic.png" class="propic">
+    <span id="userdata">{{userName}}</span>
+    <span id="userdata">{{userEmail}}</span>
+  </div>
+
+  <button ion-button full outline clear class="bottom-border" (click)="goToFav()">
+      <ion-icon name="appname-customicon4" class="inline"></ion-icon>
+    <ion-item no-lines>
+        <h2 class="inline">My Favourites</h2> 
+      </ion-item>
+  </button>
+
+  <button ion-button full outline clear class="bottom-border" (click)="appSettings()">
+      <ion-icon name="appname-customicon5" class="inline" ></ion-icon>
+    <ion-item no-lines>
+     <h2 class="inline">App Settings</h2> 
+    </ion-item>
+  </button>
+
+  <button ion-button full outline clear class="bottom-border">
+      <ion-icon name="appname-customicon6" class="inline"></ion-icon>
+    <ion-item no-lines>
+        <h2 class="inline">Rate us on store</h2> 
+      </ion-item>
+  </button>
+
+  <button ion-button full outline clear class="bottom-border" (click)="logOut()">
+      <ion-icon name="appname-customicon3" class="inline"></ion-icon>
+    <ion-item no-lines>
+        <h2 class="inline">Log Out</h2> 
+      </ion-item>
+  </button>
+</ion-content>

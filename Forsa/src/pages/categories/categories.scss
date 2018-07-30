@@ -1,0 +1,28 @@
+page-categories {
+
+    [text-color="custom-color"] {
+        color: white;
+        font-family: 'insideApp';
+        padding-left:20% !important;
+        font-size:20px;
+        text-align: center;
+    }
+
+    ion-header ion-icon.back-button-icon.icon, 
+    ion-header span.back-button-text.back-button-text-ios {
+    color: white;
+    margin-bottom:10%;
+}
+
+    .bottom-border { 
+        border-bottom: 1px solid grey; 
+        height:10%;
+    }
+
+    .button{
+        text-align: left !important;
+        color:black !important;
+        font-size: 110% !important
+    }
+
+}

@@ -1,0 +1,151 @@
+page-welcome {
+    
+    ion-content{
+        background:   rgb(241, 241, 231) !important;
+        font-family: 'Indie Flower', cursive !important;
+
+    }
+    .title{
+        text-align: center;
+        display: block;
+        margin-right: 10%;
+    }
+    .toolbar-background {
+        background:  #463D68 !important;
+        border-bottom: 0 !important;
+    }
+
+    .segment-button {
+        color:black !important;
+        text-transform: none !important;
+        font-size: 2rem !important;
+       // font-weight: bold !important;
+        border: 0 !important;
+        font-family: 'insideApp';
+
+    }
+    
+      .SwipedTabs-indicatorSegment
+      {
+          transition:  0.3s all;
+          height: 3px;
+          position: relative;
+          top: -2px;
+          background-color:  transparent !important;
+      }
+   
+       .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
+      {
+        color: white !important;
+        border-bottom: 3px solid white !important;
+    }
+      .SwipedTabs-tabs
+      {
+          border-bottom: solid 1px #e6e6e6  !important;
+          background:  #463D68 !important;
+        }
+
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+          }
+
+      .headerImg {
+        //display: block;
+        width: auto;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: relative;
+
+    }
+    .logoImg {
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: absolute;
+        top: 85%;
+        left: 38%;
+    }   
+    .featured {
+        margin: auto !important;
+        padding-bottom: 10%;
+        width: 100% !important;
+        display: inline-block;
+        height:150% !important;        
+    }
+    .swiper-pagination-bullet-active{
+        background: color($colors, secondary) !important;
+        opacity: 1;
+      }
+      
+    .cardTitle{
+        text-align: left !important;
+        font-size:13px;
+        font-weight:bold;
+        padding-top:5%;
+        .store{
+            padding-left:5px;
+            color: #666;
+        }
+        .promotion{
+            color: #463D68;
+        }
+    }
+    .offerTitle{
+        text-align: left !important;
+        font-size:17px;
+        font-weight:bold;
+        color: #666;
+    }   
+
+    .storeImg{
+        display: block;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    ion-card{
+        width:100% !important;
+        display:block;
+        margin-left:0 !important;
+        margin-right: 0 !important;
+        margin-bottom:3px !important;
+        height:80px !important;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .cardInfo{
+        position: relative;
+        bottom: 95%;
+        right:10%;
+        font-weight:bold;
+        .store{
+            color: #666;
+        }
+        .promotion{
+            text-align: left !important;
+            color: #463D68;
+        }
+        p{
+            text-align: center;
+            color:rgb(97, 96, 96) !important;
+            font-weight: bold;
+            font-size:17px;
+            padding-left:5%;
+        }
+        .expDay{
+            padding-top:2%;
+            text-align: right;
+            font-size:13px;
+        }
+    }
+}
+

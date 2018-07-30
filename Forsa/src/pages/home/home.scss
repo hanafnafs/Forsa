@@ -1,0 +1,47 @@
+page-home {
+
+    ion-content{
+        background:  linear-gradient(0deg, #31647F,	#230B48 ) !important;
+        //font-family: 'Indie Flower', cursive !important;
+        overflow: hidden;
+
+
+        }
+    
+
+    h1{
+        font-family: Logo;
+        color:white;
+        padding-top: 40%;
+        text-align:center;
+        font-size: 75px;
+        font-weight: bold;
+    }
+   ion-buttons{
+        padding-top: 55%;
+        padding-left:auto; 
+        padding-right:auto; 
+
+    }
+
+    .button.login{
+        background: white;
+        width: 100%;
+        border-color: transparent;
+        color:#468EAD !important;
+        }
+        .button.login.active, .button.login.activated{
+            background-color: #1E2F4B;
+            color:white;
+        }
+
+    .button.signup{
+            width: 100%;
+            border-color: white;
+            color:white !important;
+            }
+        .button.signup.active, .button.signup.activated{
+            background-color: white;
+            color:#468EAD;
+        }
+}
